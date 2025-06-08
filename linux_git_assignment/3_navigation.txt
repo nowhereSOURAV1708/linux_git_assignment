@@ -1,0 +1,12 @@
+soura@LAPTOP-VB36N96G:~$ cd ~
+soura@LAPTOP-VB36N96G:~$ mkdir -p demo/linux/commands
+soura@LAPTOP-VB36N96G:~$ cd demo/linux/commands
+soura@LAPTOP-VB36N96G:~/demo/linux/commands$ touch file1.txt file2.txt
+soura@LAPTOP-VB36N96G:~/demo/linux/commands$ ls
+file1.txt  file2.txt
+soura@LAPTOP-VB36N96G:~/demo/linux/commands$ mv file1.txt ../
+soura@LAPTOP-VB36N96G:~/demo/linux/commands$ cd ..
+soura@LAPTOP-VB36N96G:~/demo/linux$ ls
+commands  file1.txt
+soura@LAPTOP-VB36N96G:~/demo/linux$ cd /
+soura@LAPTOP-VB36N96G:/$ cd ~

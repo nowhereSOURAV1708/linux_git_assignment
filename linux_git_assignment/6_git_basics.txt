@@ -1,0 +1,65 @@
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/soura/.git/
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (main)
+$
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (main)
+$ git --version
+git version 2.43.0.windows.1
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (main)
+$ git config --global user.name "sourav sandilya"
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (main)
+$ git config --global user.email "souravsandilya89882@gmail.com"
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (main)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=main
+user.name=sourav sandilya
+user.email=souravsandilya89882@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+gui.wmstate=normal
+gui.geometry=1109x563+64+64 216 255
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (main)
+$ touch README.md
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (main)
+$ git add README.md
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (main)
+$ git commit -m "Initial commit"
+[main (root-commit) 637fa75] Initial commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (main)
+$ git log
+commit 637fa753bd7c49f55bf91faddad781d0c8fe352a (HEAD -> main)
+Author: sourav sandilya <souravsandilya89882@gmail.com>
+Date:   Sun Jun 8 20:18:04 2025 +0530
+
+    Initial commit
+

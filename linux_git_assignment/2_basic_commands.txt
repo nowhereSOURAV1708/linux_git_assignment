@@ -1,0 +1,9 @@
+soura@LAPTOP-VB36N96G:~$ mkdir my_folder
+soura@LAPTOP-VB36N96G:~$ cd my_folder
+soura@LAPTOP-VB36N96G:~/my_folder$ touch my_file.txt
+soura@LAPTOP-VB36N96G:~/my_folder$ ls -l
+total 0
+-rw-r--r-- 1 soura soura 0 Jun  8 14:23 my_file.txt
+soura@LAPTOP-VB36N96G:~/my_folder$ rm my_file.txt
+soura@LAPTOP-VB36N96G:~/my_folder$ cd ..
+soura@LAPTOP-VB36N96G:~$ rmdir my_folder

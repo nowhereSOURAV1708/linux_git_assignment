@@ -1,0 +1,20 @@
+soura@LAPTOP-VB36N96G:~$ sudo useradd testuser
+[sudo] password for soura:
+Sorry, try again.
+[sudo] password for soura:
+soura@LAPTOP-VB36N96G:~$ sudo passwd testuser
+New password:
+Retype new password:
+passwd: password updated successfully
+soura@LAPTOP-VB36N96G:~$
+soura@LAPTOP-VB36N96G:~$
+soura@LAPTOP-VB36N96G:~$
+soura@LAPTOP-VB36N96G:~$ sudo useradd testuser
+useradd: user 'testuser' already exists
+soura@LAPTOP-VB36N96G:~$ sudo groupadd devgroup
+soura@LAPTOP-VB36N96G:~$ sudo usermod -aG devgroup testuser
+soura@LAPTOP-VB36N96G:~$ groups testuser
+testuser : testuser devgroup
+soura@LAPTOP-VB36N96G:~$ sudo userdel testuser
+soura@LAPTOP-VB36N96G:~$ sudo groupdel devgroup
+soura@LAPTOP-VB36N96G:~$

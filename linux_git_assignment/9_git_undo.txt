@@ -1,0 +1,11 @@
+soura@LAPTOP-VB36N96G MINGW64 ~ (main)
+$ git add feature.txt
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (main)
+$ git commit -m "Add feature.txt"
+[main e5f9271] Add feature.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 feature.txt
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (main)
+$ git reset --soft HEAD~1

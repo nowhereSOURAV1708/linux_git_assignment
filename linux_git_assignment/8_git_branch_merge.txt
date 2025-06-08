@@ -1,0 +1,48 @@
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (main)
+$ git branch feature1
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (main)
+$ git checkout feature1
+Switched to branch 'feature1'
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (feature1)
+$ touch feature.txt
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (feature1)
+$ git add feature.txt
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (feature1)
+$ git commit -m "Add feature file"
+[feature1 e32da99] Add feature file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 feature.txt
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (feature1)
+$ git push -u origin feature1
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 258 bytes | 258.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature1' on GitHub by visiting:
+remote:      https://github.com/nowhereSOURAV1708/celebaltech/pull/new/feature1
+remote:
+To https://github.com/nowhereSOURAV1708/celebaltech.git
+ * [new branch]      feature1 -> feature1
+branch 'feature1' set up to track 'origin/feature1'.
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (feature1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (main)
+$ git merge feature1
+Updating 637fa75..e32da99
+Fast-forward
+ feature.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 feature.txt

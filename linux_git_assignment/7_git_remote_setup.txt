@@ -1,0 +1,26 @@
+soura@LAPTOP-VB36N96G MINGW64 ~ (main)
+$ git remote remove origin
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (main)
+$ git remote add origin https://github.com/nowhereSOURAV1708/celebaltech.git
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (main)
+$ git remote -v
+origin  https://github.com/nowhereSOURAV1708/celebaltech.git (fetch)
+origin  https://github.com/nowhereSOURAV1708/celebaltech.git (push)
+
+
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (main)
+$ git branch
+* main
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 220 bytes | 220.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/nowhereSOURAV1708/celebaltech.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.

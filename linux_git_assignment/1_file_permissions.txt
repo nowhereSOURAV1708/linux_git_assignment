@@ -1,0 +1,15 @@
+soura@LAPTOP-VB36N96G:~$ touch permission_test.sh
+soura@LAPTOP-VB36N96G:~$ ls -l permission_test.sh
+-rw-r--r-- 1 soura soura 0 Jun  8 14:20 permission_test.sh
+soura@LAPTOP-VB36N96G:~$ chmod 744 permission_test.sh
+soura@LAPTOP-VB36N96G:~$ ls -l permission_test.sh
+-rwxr--r-- 1 soura soura 0 Jun  8 14:20 permission_test.sh
+soura@LAPTOP-VB36N96G:~$ chmod u-x permission_test.sh
+soura@LAPTOP-VB36N96G:~$ ls -l permission_test.sh
+-rw-r--r-- 1 soura soura 0 Jun  8 14:20 permission_test.sh
+soura@LAPTOP-VB36N96G:~$ chmod g+w permission_test.sh
+soura@LAPTOP-VB36N96G:~$ ls -l permission_test.sh
+-rw-rw-r-- 1 soura soura 0 Jun  8 14:20 permission_test.sh
+soura@LAPTOP-VB36N96G:~$ chmod o+x permission_test.sh
+soura@LAPTOP-VB36N96G:~$ ls -l permission_test.sh
+-rw-rw-r-x 1 soura soura 0 Jun  8 14:20 permission_test.sh

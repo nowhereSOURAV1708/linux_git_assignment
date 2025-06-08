@@ -1,0 +1,49 @@
+soura@LAPTOP-VB36N96G MINGW64 ~ (main)
+$ git checkout -b branchA
+Switched to a new branch 'branchA'
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (branchA)
+$ echo "Line A" > conflict.txt
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (branchA)
+$ git add conflict.txt
+warning: in the working copy of 'conflict.txt', LF will be replaced by CRLF the next time Git touches it
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (branchA)
+$ git commit -m "Branch A changes"
+[branchA f3e20ce] Branch A changes
+ 2 files changed, 1 insertion(+)
+ create mode 100644 conflict.txt
+ create mode 100644 feature.txt
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (branchA)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (main)
+$ echo "Line B" > conflict.txt
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (main)
+$ git add conflict.txt
+warning: in the working copy of 'conflict.txt', LF will be replaced by CRLF the next time Git touches it
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (main)
+$ git commit -m "Main branch changes"
+[main d51451e] Main branch changes
+ 1 file changed, 1 insertion(+)
+ create mode 100644 conflict.txt
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (main)
+$ git merge branchA
+Auto-merging conflict.txt
+CONFLICT (add/add): Merge conflict in conflict.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (main|MERGING)
+$ git add conflict.txt
+
+soura@LAPTOP-VB36N96G MINGW64 ~ (main|MERGING)
+$
+git commit -m "Resolved merge conflict between main and branchA"
+[main a42d0f1] Resolved merge conflict between main and branchA
